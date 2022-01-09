@@ -145,6 +145,8 @@ def Huffman_Decoding(encoded_data, huffman_tree):
             huffman_tree = tree_head
         
     string = ''.join([str(item) for item in decoded_output])
+    
+# Writing the decoded output to external text file
 
     with open('decoded.txt', 'w') as f:
             txt = string
