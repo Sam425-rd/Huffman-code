@@ -55,7 +55,7 @@ def Output_Encoded(data, coding):
     string = ''.join([str(item) for item in encoding_output])    
     return string
         
-# Calculate the space difference between compressed and non compressed data #
+# Calculate the size difference between compressed and non compressed data #
 def size(data, coding):
     before_compression = len(data) * 8 # total bit space to stor the data before compression
     after_compression = 0
